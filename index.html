@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,6 +19,7 @@
     nav {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       background: #ffcc00; /* Gold */
     }
     nav a {
@@ -26,6 +27,8 @@
       padding: 1rem;
       text-decoration: none;
       font-weight: bold;
+      flex: 1;
+      text-align: center;
     }
     nav a:hover {
       background: #006400;
@@ -36,12 +39,54 @@
       max-width: 900px;
       margin: auto;
     }
+    /* Fullscreen Hero Section */
+    #home {
+      padding: 0;
+      max-width: 100%;
+      margin: 0;
+    }
+    #home .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Full screen height */
+      overflow: hidden;
+    }
+    #home .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Cover full screen */
+    }
+    #home .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
     footer {
       text-align: center;
       padding: 1rem;
       background: #006400;
       color: white;
       margin-top: 2rem;
+    }
+    /* Responsive design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+      #home .hero-text {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -60,16 +105,16 @@
   </nav>
 
   <section id="home">
-    <h2>Welcome</h2>
-    <p>
-      Wing Shun Network Operations Limited is a profit-driven company focused on delivering
-      top-quality network and IT solutions. Our commitment is to create value, 
-      generate sustainable growth, and provide professional services that meet client demands.
-    </p>
-    <p>
-      We aim to become one of Ghana’s most trusted network and IT solution providers,
-      combining innovation, technical expertise, and excellent customer service.
-    </p>
+    <div class="hero">
+      <img src="win1.jpg" alt="Wing Shun Hero Image">
+      <div class="hero-text">
+        <h2>Welcome to Wing Shun Network Operations Limited</h2>
+        <p>
+          Delivering top-quality network and IT solutions with innovation,
+          technical expertise, and excellent customer service.
+        </p>
+      </div>
+    </div>
   </section>
 
   <section id="about">
@@ -112,4 +157,3 @@
   </footer>
 </body>
 </html>
-
