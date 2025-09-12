@@ -9,7 +9,17 @@
       margin: 0;
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      padding-top: 70px; /* Keep content below fixed nav */
     }
+
+    html {
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+
+    section {
+      scroll-margin-top: 80px; /* Prevent sections from hiding under navbar */
+    }
+
     header {
       background: #006400; /* Dark green */
       color: white;
@@ -83,11 +93,6 @@
       .hamburger {
         display: flex;
       }
-    }
-
-    /* Push content down so it's not hidden behind fixed nav */
-    body {
-      padding-top: 70px; /* Adjust to nav height */
     }
 
     /* Fullscreen Hero Section */
@@ -219,4 +224,3 @@
   </script>
 </body>
 </html>
-
