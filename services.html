@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - Wing Shun Network Operations Limited</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; padding-top: 70px; }
-    header { background: #006400; color: white; padding: 1rem 0; text-align: center; }
-    nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: #ffcc00; }
-    .nav-links { display: flex; justify-content: center; flex-wrap: wrap; margin: 0; padding: 0; }
-    .nav-links a { color: black; padding: 1rem; text-decoration: none; font-weight: bold; }
-    .nav-links a:hover { background: #006400; color: white; }
-    .hamburger { display: none; flex-direction: column; cursor: pointer; position: absolute; right: 1rem; top: 1rem; }
-    .hamburger div { width: 25px; height: 3px; background: black; margin: 4px 0; }
-    @media(max-width:768px){ .nav-links{display:none;flex-direction:column;background:#ffcc00;width:100%} .nav-links.show{display:flex} .hamburger{display:flex} }
-    footer { text-align: center; padding: 1rem; background: #006400; color: white; margin-top: 2rem; }
+    /* Service section with images */
+    .service-item {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0;
+      padding: 0.5rem;
+      background: #f4f4f4;
+      border-radius: 8px;
+    }
+
+    .service-item img {
+      width: 60px;
+      height: 60px;
+      margin-right: 1rem;
+      object-fit: contain;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-item p {
+      margin: 0;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -37,12 +51,27 @@
 
   <section>
     <h2>Our Services</h2>
-    <ul>
-      <li>Network design and structured cabling</li>
-      <li>Managed IT services and cloud integration</li>
-      <li>Firewall, security, and data protection solutions</li>
-      <li>On-site and remote technical support</li>
-    </ul>
+
+    <div class="service-item">
+      <img src="https://img.icons8.com/ios/452/network.png" alt="Network Design">
+      <p>Network Design and Structured Cabling</p>
+    </div>
+
+    <div class="service-item">
+      <img src="https://img.icons8.com/ios/452/cloud.png" alt="Managed IT Services">
+      <p>Managed IT Services and Cloud Integration</p>
+    </div>
+
+    <div class="service-item">
+      <img src="https://img.icons8.com/ios/452/firewall.png" alt="Firewall and Security">
+      <p>Firewall, Security, and Data Protection Solutions</p>
+    </div>
+
+    <div class="service-item">
+      <img src="https://img.icons8.com/ios/452/tech-support.png" alt="Technical Support">
+      <p>On-site and Remote Technical Support</p>
+    </div>
+
   </section>
 
   <footer>
