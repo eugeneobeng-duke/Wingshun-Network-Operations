@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Wing Shun Network Operations Limited</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; padding-top: 70px; }
+    header { background: #006400; color: white; padding: 1rem 0; text-align: center; }
+    nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: #ffcc00; }
+    .nav-links { display: flex; justify-content: center; flex-wrap: wrap; margin: 0; padding: 0; }
+    .nav-links a { color: black; padding: 1rem; text-decoration: none; font-weight: bold; }
+    .nav-links a:hover { background: #006400; color: white; }
+    .hamburger { display: none; flex-direction: column; cursor: pointer; position: absolute; right: 1rem; top: 1rem; }
+    .hamburger div { width: 25px; height: 3px; background: black; margin: 4px 0; }
+    @media(max-width:768px){ .nav-links{display:none;flex-direction:column;background:#ffcc00;width:100%} .nav-links.show{display:flex} .hamburger{display:flex} }
+    footer { text-align: center; padding: 1rem; background: #006400; color: white; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wing Shun Network Operations Limited</h1>
+    <p>A Profit-Making Company in Ghana</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="location.html">Location</a>
+    </div>
+  </nav>
+
+  <section>
+    <h2>Our Services</h2>
+    <ul>
+      <li>Network design and structured cabling</li>
+      <li>Managed IT services and cloud integration</li>
+      <li>Firewall, security, and data protection solutions</li>
+      <li>On-site and remote technical support</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wing Shun Network Operations Limited. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu(){ document.getElementById("navLinks").classList.toggle("show"); }
+  </script>
+</body>
+</html>

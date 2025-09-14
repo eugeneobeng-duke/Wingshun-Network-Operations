@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location - Wing Shun Network Operations Limited</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; padding-top: 70px; }
+    header { background: #006400; color: white; padding: 1rem 0; text-align: center; }
+    nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: #ffcc00; }
+    .nav-links { display: flex; justify-content: center; flex-wrap: wrap; margin: 0; padding: 0; }
+    .nav-links a { color: black; padding: 1rem; text-decoration: none; font-weight: bold; }
+    .nav-links a:hover { background: #006400; color: white; }
+    .hamburger { display: none; flex-direction: column; cursor: pointer; position: absolute; right: 1rem; top: 1rem; }
+    .hamburger div { width: 25px; height: 3px; background: black; margin: 4px 0; }
+    @media(max-width:768px){ .nav-links{display:none;flex-direction:column;background:#ffcc00;width:100%} .nav-links.show{display:flex} .hamburger{display:flex} }
+    footer { text-align: center; padding: 1rem; background: #006400; color: white; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wing Shun Network Operations Limited</h1>
+    <p>A Profit-Making Company in Ghana</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="location.html">Location</a>
+    </div>
+  </nav>
+
+  <section>
+    <h2>Our Location</h2>
+    <p>We are proudly located in Accra, Ghana.</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.433893868924!2d-0.1869643855098526!3d5.60371669595932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b1c0e3a1dcb%3A0x5aa6c7a6dcb9afda!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1662552923877!5m2!1sen!2sgh" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wing Shun Network Operations Limited. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu(){ document.getElementById("navLinks").classList.toggle("show"); }
+  </script>
+</body>
+</html>
