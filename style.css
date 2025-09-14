@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background: #006400; /* Dark green */
+  background: blue; /* Dark green */
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -112,3 +112,4 @@ footer {
   color: white;
   margin-top: 2rem;
 }
+
